@@ -4,5 +4,10 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>gals-1/gt-walsheim-web.ttf</string>
+		<string>gals-1/gt-walsheim-bold-web (1).ttf</string>
+	</array>
 </dict>
 </plist>

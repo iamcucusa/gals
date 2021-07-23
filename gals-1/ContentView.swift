@@ -31,10 +31,25 @@ struct CameraView: View {
             CameraPreview(camera: camera)
                 .ignoresSafeArea(.all, edges: .all)
             VStack {
-                Image("tmb-games")
-                    .frame(maxWidth: .infinity, alignment:.top)
-                Spacer()
+                Image("overlay").resizable()
             }
+            VStack {
+                Image("intro")
+                    .frame(maxWidth: .infinity, alignment:.top)
+                    .padding(.vertical, 24)
+                
+                Spacer()
+                
+                Text("Place the character on the platform screen into this shape.")
+                    .font(Font.custom("gt-walsheim-web", size: 16))
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(2)
+                    .frame(maxWidth: 250, alignment:.bottom)
+                    .padding(24)
+            }
+    
             
         }
         .onAppear(perform: {
