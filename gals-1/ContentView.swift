@@ -41,12 +41,12 @@ struct CameraView: View {
                 Spacer()
                 
                 Text("Place the character on the platform screen into this shape.")
-                    .font(Font.custom("gt-walsheim-web", size: 16))
+                    .font(Font.custom("gt-walsheim-web", size: 18, relativeTo: .title))
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .lineLimit(2)
-                    .frame(maxWidth: 250, alignment:.bottom)
+                    .frame(maxWidth: 300, alignment:.bottom)
                     .padding(24)
             }
     
